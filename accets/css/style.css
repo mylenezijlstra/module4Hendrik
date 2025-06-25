@@ -1,0 +1,56 @@
+/* 1) Globale reset en box-model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2) Zorg dat de pagina scrollbaar is */
+html,
+body {
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+/* 3) Slideshow container */
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* full viewport height */
+    overflow: hidden;
+}
+
+/* 4) Elke slide */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* houdt verhouding, vult de box */
+    opacity: 0;
+    /* standaard onzichtbaar */
+    transition: opacity 1s ease;
+    /* fade-effect */
+    z-index: 0;
+}
+
+/* 5) Actieve slide */
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+    /* bovenop de anderen */
+}
+
+/* 6) Content onder de slideshow */
+.content {
+    background: #f9f9f9;
+    color: #333;
+    padding: 3rem 2rem;
+    min-height: 100vh;
+    /* test scrollen */
+}
