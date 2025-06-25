@@ -11,3 +11,25 @@ function showSlides() {
 }
 
 setInterval(showSlides, 3000);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.querySelector('.manual-carousel .manual-slides');
+    const slides = Array.from(wrapper.children);
+    let current = 0;
+
+    function update() {
+        wrapper.style.transform = `translateX(-${current * 100}%)`;
+    }
+
+    document.querySelector('.manual-prev').addEventListener('click', () => {
+        current = (current - 1 + slides.length) % slides.length;
+        update();
+    });
+
+    document.querySelector('.manual-next').addEventListener('click', () => {
+        current = (current + 1) % slides.length;
+        update();
+    });
+
+    update();
+});
