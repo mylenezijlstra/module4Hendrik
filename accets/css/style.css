@@ -1,7 +1,7 @@
 /* 0) Google Font import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* 1) Reset & box-model */
+/* 1) Reset & box‐model */
 *,
 *::before,
 *::after {
@@ -16,24 +16,84 @@ html, body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* 3) Slideshow container */
+/* 3) Scherpe balken + flex‐header */
+.header-stripes {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 170px;  /* 80px groen + 80px wit + 10px groen (pas aan naar 100+100+20) */
+  padding: 0 20px;
+  background: linear-gradient(
+      to bottom,
+      /* 0–80px: groen  */
+      #496549 0px,
+      #496549 80px,
+      /* 80–160px: wit  */
+      #fff     80px,
+      #fff     160px,
+      /* 160–170px: groen */
+      #496549 160px,
+      #496549 170px
+    )
+    no-repeat;
+  background-size: 100% 170px;
+}
+
+.header-stripes .logo {
+  position: absolute;
+  top: -15px;               /* 10px vanaf bovenkant container */
+  left: 10px;              /* 10px vanaf linkerkant */
+  max-height: 180px;       /* past in de bovenste 200px */
+  width: auto;
+  z-index: 5;              /* boven de balken */
+}
+
+
+/* 4) Nav‐buttons helemaal rechts */
+/* 4) Nav‐buttons iets lager en groter */
+.nav-buttons {
+  display: flex;
+  margin-left: auto;  /* houdt ze rechts */
+  margin-top: 70px;   /* 10px naar beneden */
+  gap: 0.75rem;       /* iets meer ruimte tussen buttons */
+}
+
+.nav-buttons a {
+  background-color: #496549;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;    
+  padding: 10px;/* meer padding voor grotere buttons */
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+
+.nav-buttons a:hover {
+  background-color: #3f5a3f;
+}
+
+/* 5) Slideshow container */
 .slideshow {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  z-index: 1;
 }
 
-/* 4) Extra dikke boog */
+/* 6) Extra dikke boog */
 .slideshow::after {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 140vw;             /* iets breder voor vloeiende randen */
-  height: 60vh;             /* bepaalt ‘bolheid’ */
-  border-top: 200px solid #648b64;
+  width: 140vw;
+  height: 60vh;
+  border-top: 200px solid #799a79;
   border-left: none;
   border-right: none;
   border-bottom: none;
@@ -42,27 +102,28 @@ html, body {
   pointer-events: none;
 }
 
+/* 7) Hero‐tekst */
 .hero-text {
   position: absolute;
-  top: 28%;             
+  top: 29%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
   color: #fff;
   text-align: center;
   font-size: 1.5rem;
-  font-weight: 600;       /* dikgedrukt */
+  font-weight: 600;
   line-height: 1.4;
   max-width: 70%;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
-
-/* 6) Slides styling */
+/* 8) Slides styling */
 .slide {
   position: absolute;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   opacity: 0;
   transition: opacity 1s ease, filter 0.5s ease;
@@ -73,10 +134,9 @@ html, body {
 .slide.active {
   opacity: 1;
   z-index: 1;
-  /* filter: blur(0);  // als je achtergrond scherp wilt */
 }
 
-/* 7) Content onder de slideshow */
+/* 9) Content onder de slideshow */
 .content {
   background: #f9f9f9;
   color: #333;
