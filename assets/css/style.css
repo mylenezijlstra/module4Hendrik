@@ -1,0 +1,129 @@
+body {
+    margin: auto;
+    padding: 0px;
+    width: 80%;
+
+}
+
+
+header {
+    background-color: #eeeeee;
+    margin: auto;
+    height: 190px;
+
+}
+
+.upperbar {
+    background-color:   #48653E;
+    margin: auto;
+    height: 90px;
+
+}
+
+img, .logo {
+    width: 160px;
+    height: 160px;
+   float: left;
+   margin-left: 10px;
+   margin-top: 2px;
+    
+    
+}
+
+
+.menubar {
+    background-color: #eeeeee;
+    margin: auto;
+    height: 100px;
+    width: 70%;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    
+    
+}
+
+.navbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.navbox a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.homebutton {
+    background-color: #61884e;
+    color: white;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.photosbutton {
+    background-color: #61884e;
+    color: white;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.dienstenbutton {
+    background-color: #61884e;
+    color: white;
+    border-radius: 5px;
+    padding: 20px 20px;
+}
+
+.contactbutton {
+    background-color: #61884e;
+    color: white;
+    border-radius: 5px;
+    padding: 20px 25px;
+}
+
+
+
+
+.headerline {
+    background-color: #2a5740;
+    height: 5px;
+    width: 100%;
+}
+
+
+
+#intro {
+    margin-top: 25px;
+    width: 100%;
+    height: 300px;
+    background-color: #aeaeae;
+}
+
+#photoslider {
+
+    width: 100%;
+    height: 500px;
+    background-color: #ebebeb;
+}
+
+
+#diensten {
+    width: 100%;
+    height: 300px;
+    background-color: #377137;
+}
+
+
+footer {
+    background-color: #98e540;
+    height: 200px;
+    width: 100%;
+}
+
