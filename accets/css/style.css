@@ -486,53 +486,54 @@ body {
         width: 200vw;
         /* zoals je eerder gebruikte */
     }
-}
 
-.blue-line {
-    min-height: 1000px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
 
-.blue-line__img {
-    margin: 30px;
-    max-width: 90%;
-    height: auto;
-}
+    .blue-line {
+        min-height: 1000px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-.blue-line__text {
-    margin-top: 1rem;
-    padding: 30px;
-    font-size: 1rem;
-    text-align: center;
-}
+    .blue-line__img {
+        margin: 30px;
+        max-width: 90%;
+        height: auto;
+    }
 
-.services-container .zigzag-item {
-    flex-direction: column !important;
-    align-items: center;
-    text-align: center;
-}
+    .blue-line__text {
+        margin-top: 1rem;
+        padding: 30px;
+        font-size: 1rem;
+        text-align: center;
+    }
 
-.services-container .zigzag-item img {
-    margin: 20px auto;
-    max-width: 80%;
-    height: auto;
-}
+    .services-container .zigzag-item {
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+    }
 
-.services-container .zigzag-text {
-    margin-top: 1rem;
-    padding: 0 30px;
-    text-align: center;
-}
+    .services-container .zigzag-item img {
+        margin: 20px auto;
+        max-width: 80%;
+        height: auto;
+    }
 
-.services-container .zigzag-text h3 {
-    font-size: 1.6rem;
-    margin-bottom: 0.5rem;
-}
+    .services-container .zigzag-text {
+        margin-top: 1rem;
+        padding: 0 30px;
+        text-align: center;
+    }
 
-.services-container .zigzag-text p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
+    .services-container .zigzag-text h3 {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
 
+    .services-container .zigzag-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+}
