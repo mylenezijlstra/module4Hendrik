@@ -33,3 +33,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     update();
 });
+
+
+
+
+
+
+const autoSlides = document.querySelectorAll('.auto-slide');
+    let autoIndex = 0;
+
+    function showAutoSlide(index) {
+        autoSlides.forEach(slide => slide.classList.remove('active'));
+        autoSlides[index].classList.add('active');
+    }
+
+    setInterval(() => {
+        autoIndex = (autoIndex + 1) % autoSlides.length;
+        showAutoSlide(autoIndex);
+    }, 4000);
+
+    showAutoSlide(autoIndex);
