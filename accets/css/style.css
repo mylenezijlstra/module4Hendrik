@@ -402,3 +402,43 @@ body {
     height: 40px;
     border-radius: 4px;
 }
+
+
+.contact-extra {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-info,
+.openingstijden-box {
+  flex: 1;
+  min-width: 280px;
+}
+
+.openingstijden-box {
+  background-color: #d5d5da;
+  padding: 20px;
+  border: 2px solid #22382f;
+  border-radius: 15px;
+}
+
+.contact-info h2,
+.openingstijden-box h2 {
+  margin-top: 0;
+}
+
+.contact-info p, .telefoonnummer  {
+  font-size: 20px;
+  font-weight: bold;
+    color: #334333;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
