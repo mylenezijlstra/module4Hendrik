@@ -66,7 +66,9 @@ body {
 }
 
 .nav-buttons a {
-    background-color: #496549;  
+    background-color: #496549;
+    background-color: #496549;
+    background-color: #496549;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -186,27 +188,22 @@ body {
     /* optioneel: binnenmarge */
 }
 
-.manual-carousel {
-    position: relative;
-    overflow: visible;
-    width: 100%;
-    height: auto;
-    /* hoogte past zich aan de slides aan */
-    margin: 2rem 0;
+
+
+/* Correctie voor vaste header bij scrollen */
+#home,
+#gallerij,
+#diensten,
+#contact {
+    scroll-margin-top: 170px;
 }
 
-
-.manual-carousel .manual-slides {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.manual-carousel .manual-slide {
-    min-width: 100%;
-    height: auto;
-    /* hoogte past zich aan beeldverhouding aan */
-    object-fit: contain;
-    /* volledige afbeelding zichtbaar */
+/* Correctie voor vaste header bij scrollen */
+#home,
+#gallerij,
+#diensten,
+#contact {
+    scroll-margin-top: 170px;
 }
 
 
@@ -243,7 +240,7 @@ body {
 .green-line {
     width: 100%;
     /* volle breedte */
-    height: 2000px;
+    height: 2450px;
     /* 2000px “dikte” */
     background-color: #799a79;
 }
@@ -349,9 +346,10 @@ body {
     text-align: center;
 }
 
+
 .contactformulier {
     width: 100%;
-    height: 1000px;
+    height: 800px;
     background-color: #efefef;
     display: flex;
     flex-direction: column;
@@ -384,7 +382,8 @@ body {
     color: #334333;
 }
 
-.contactformulier input, textarea {
+.contactformulier input,
+.contactformulier textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 15px;
@@ -392,8 +391,6 @@ body {
     width: 100%;
     border: #333333 solid 1px;
 }
-
-
 
 .contactformulier button[type="submit"] {
     background-color: #496549;
@@ -405,6 +402,7 @@ body {
     height: 40px;
     border-radius: 4px;
 }
+
 
 .contact-extra {
   display: flex;
@@ -443,3 +441,4 @@ body {
 .contact-info a:hover {
   text-decoration: underline;
 }
+
