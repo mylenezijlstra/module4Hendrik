@@ -348,3 +348,7 @@ body {
     /* pas aan naar wens */
     text-align: center;
 }
+
+html {
+    scroll-behavior: smooth;
+}
