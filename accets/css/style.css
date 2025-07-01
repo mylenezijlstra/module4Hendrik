@@ -384,3 +384,17 @@ html {
     opacity: 1;
     z-index: 1;
 }
+
+.header-stripes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+body {
+    padding-top: 170px; 
+}
+
