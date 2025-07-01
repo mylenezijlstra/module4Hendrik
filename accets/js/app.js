@@ -53,3 +53,20 @@ const autoSlides = document.querySelectorAll('.auto-slide');
     }, 4000);
 
     showAutoSlide(autoIndex);
+
+
+
+
+
+
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const navButtons = document.querySelector('.nav-buttons');
+
+  hamburger.addEventListener('click', () => {
+    navButtons.classList.toggle('open');
+  });
+});
