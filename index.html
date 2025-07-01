@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hendrik Hogendijk Hoveniers</title>
     <link rel="stylesheet" href="accets/css/style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,22 +18,30 @@
     <!-- 1) Header met drie balken + nav -->
     <div class="header-stripes">
         <img src="accets/img/logo.png" alt="Logo Hendrik Hogendijk" class="logo">
+
+        <button class="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <nav class="nav-buttons">
-            <a href="#">Home</a>
-            <a href="#">Gallerij</a>
-            <a href="#">Diensten</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#gallerij">Gallerij</a>
+            <a href="#diensten">Diensten</a>
+            <a href="#contact">Contact</a>
         </nav>
     </div>
 
     <!-- 2) Fade-slideshow -->
-    <div class="slideshow">
+    <div id="home" class="slideshow">
         <div class="arch">
             <div class="hero-text">
                 Welkom bij de website van Hendrik Hogendijk,<br>
                 hovenier in de regio Utrecht, Zeist en De Bilt.
             </div>
         </div>
+        <!-- Afbeeldingen slideshow -->
         <img src="accets/img/tuinfoto1.jpg" class="slide fade" alt="">
         <img src="accets/img/tuinfoto2.jpg" class="slide fade" alt="">
         <img src="accets/img/tuinfoto3.jpg" class="slide fade" alt="">
@@ -38,7 +51,7 @@
         <img src="accets/img/tuinfoto8.jpg" class="slide fade" alt="">
         <img src="accets/img/tuinfoto9.jpg" class="slide fade" alt="">
         <img src="accets/img/tuinfoto10.jpg" class="slide fade" alt="">
-    </div><br><br><br><br>
+    </div>
 
     <!-- 3) Blauwe band met afbeelding + tekst -->
     <div class="blue-line">
@@ -46,36 +59,37 @@
         <div class="blue-line__text">
             <p>
                 De tuin is een belangrijke plek van de woning, waar je het liefst zoveel mogelijk tijd in doorbrengt.
-                Bij Hendrik Hogendijk Hoveniers vind ik het daarom belangrijk dat iedereen zich thuis voelt in zijn of
+                Bij Hendrik Hogendijk Hoveniers vindt ik het daarom belangrijk dat iedereen zich thuis voelt in zijn of
                 haar tuin. Ik maak de tuin onderdeel van jouw ‘thuis’, door hem volledig op jouw wensen af te stemmen.
             </p>
             <p>
                 Met behulp van mooie, natuurlijke en duurzame producten en materialen creëer ik een tuin, die garant
                 staat voor een jarenlang plezierig buitenleven. Van een knusse veranda en een mooie vijver, tot een
                 gezellig terras en een kleurrijke bloemenborder: ik stop al mijn energie erin.
+            <p>
+                Met behulp van mooie, natuurlijke en duurzame producten en materialen creëer ik een tuin...
             </p>
         </div>
-    </div><br><br><br><br>
+    </div>
 
-    <!-- 4) Handmatige carousel zonder blur -->
-    <div class="manual-carousel">
-        <div class="manual-slides">
-            <img src="accets/img/tuinfoto1.jpg" class="manual-slide" alt="">
-            <img src="accets/img/tuinfoto2.jpg" class="manual-slide" alt="">
-            <img src="accets/img/tuinfoto3.jpg" class="manual-slide" alt="">
-            <img src="accets/img/tuinfoto5.jpg" class="manual-slide" alt="">
-            <img src="accets/img/tuinfoto6.jpg" class="manual-slide" alt="">
-            <img src="accets/img/tuinfoto7.jpg" class="manual-slide" alt="">
-            <img src="accets/img/tuinfoto8.jpg" class="manual-slide" alt="">
-            <img src="accets/img/tuinfoto9.jpg" class="manual-slide" alt="">
-            <img src="accets/img/tuinfoto10.jpg" class="manual-slide" alt="">
+
+
+    <div id="gallerij" class="manual-carousel">
+        <div id="extra-slideshow" class="auto-slideshow">
+            <img src="accets/img/tuinfoto1.jpg" class="auto-slide" alt="Foto 1">
+            <img src="accets/img/tuinfoto2.jpg" class="auto-slide" alt="Foto 2">
+            <img src="accets/img/tuinfoto3.jpg" class="auto-slide" alt="Foto 3">
+            <img src="accets/img/tuinfoto5.jpg" class="auto-slide" alt="Foto 2">
+            <img src="accets/img/tuinfoto6.jpg" class="auto-slide" alt="Foto 3">
+            <img src="accets/img/tuinfoto7.jpg" class="auto-slide" alt="Foto 2">
+            <img src="accets/img/tuinfoto8.jpg" class="auto-slide" alt="Foto 3">
+            <img src="accets/img/tuinfoto9.jpg" class="auto-slide" alt="Foto 2">
+            <img src="accets/img/tuinfoto10.jpg" class="auto-slide" alt="Foto 3">
         </div>
-        <button class="manual-prev">‹</button>
-        <button class="manual-next">›</button>
-    </div><br><br><br><br>
+    </div>
 
-    <!-- 5) Diensten‐sectie met zigzag-layout -->
-    <div class="green-line">
+    <!-- 5) Diensten‐sectie -->
+    <div id="diensten" class="green-line">
         <div class="Diensten">Diensten</div>
         <div class="services-container">
 
@@ -83,10 +97,8 @@
                 <img src="accets/img/tuinontwerp.png" alt="Tuinontwerp">
                 <div class="zigzag-text">
                     <h3>Tuinontwerp</h3>
-                    <p>
-                        Een mooie tuin valt of staat bij een goed tuinontwerp. Als het op ontwerpen aankomt,
-                        maakt Hendrik Hogendijk het verschil.
-                    </p>
+                    <p>Een mooie tuin valt of staat bij een goed tuinontwerp. Als het op ontwerpen aankomt, maakt
+                        Hendrik Hogendijk het verschil.</p>
                 </div>
             </div>
 
@@ -94,9 +106,7 @@
                 <img src="accets/img/tuinaanleg.png" alt="Tuinaanleg">
                 <div class="zigzag-text">
                     <h3>Tuinaanleg</h3>
-                    <p>
-                        Het aanleggen van een tuin doe ik altijd vanuit dezelfde drive:
-                        ik wil er iets moois van maken.
+                    <p>Het aanleggen van een tuin doen ik altijd vanuit dezelfde drive: ik wil er iets moois van maken.
                     </p>
                 </div>
             </div>
@@ -105,10 +115,8 @@
                 <img src="accets/img/icon-tuinonderhoud.png" alt="Tuinonderhoud">
                 <div class="zigzag-text">
                     <h3>Tuinonderhoud</h3>
-                    <p>
-                        Een mooie tuin verdient het juiste onderhoud. Immers, goed onderhoud is
-                        een essentiële voorwaarde voor een tuin die het hele jaar door mooi blijft.
-                    </p>
+                    <p>Een mooie tuin verdient het juiste onderhoud. Immers, goed onderhoud is een essentiële voorwaarde
+                        voor een tuin die het hele jaar door mooi blijft.</p>
                 </div>
             </div>
 
@@ -116,58 +124,60 @@
                 <img src="accets/img/zwemvijvers.png" alt="Zwemvijvers">
                 <div class="zigzag-text">
                     <h3>Zwemvijvers</h3>
-                    <p>
-                        Zwemvijvers is één van mijn grootste passies. En gelukkig, ze winnen aan steeds meer
-                        populariteit, waardoor ik er veel ervaring mee heb opgebouwd.
-                    </p>
+                    <p>Zwemvijvers, is één van mijn grootste passies. En gelukkig, ze winnen aan steeds meer
+                        populariteit, waardoor ik er veel ervaring mee heb opgebouwd.</p>
                 </div>
             </div>
 
         </div>
     </div>
-    <div class="contactformulier">
-        <h1>Contactformulier</h1>
-        <p>
-            Ik streef ernaar om constant in contact te staan met onze klanten totdat de klus geklaard is. <br>Als u vragen
-            of speciale verzoeken heeft, stuur ons dan een bericht. Voor een vrijblijvende offerte kunt u <br>contact met
-            ons opnemen wanneer het u uitkomt. Wij zijn u graag van dienst!
-        </p>
 
-        <form action="#" method="post">
-            <label for="name">Naam:</label>
-            <input type="text" id="name" name="name" required>
+    <div id="contact" class="contact-section">
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+        <div class="contactformulier">
+            <h1>Contactformulier</h1>
+            <p>
+                Ik streef ernaar om constant in contact te staan met onze klanten totdat de klus geklaard is. <br>Als u
+                vragen
+                of speciale verzoeken heeft, stuur ons dan een bericht. Voor een vrijblijvende offerte kunt u
+                <br>contact met
+                ons opnemen wanneer het u uitkomt. Wij zijn u graag van dienst!
+            </p>
 
-            <label for="phone">Telefoonnummer:</label>
-            <input type="tel" id="phone" name="phone" required>
+            <form action="#" method="post">
+                <label for="name">Naam:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="message">Bericht:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
- 
-            <button type="submit">Verstuur</button>
-        </form>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
 
-        
+                <label for="phone">Telefoonnummer:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Bericht:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Verstuur</button>
+            </form>
 
 
+
+
+        </div>
     </div>
 
 
-
     <footer class="green-footer">
-
-
         <img src="accets/img/logo.png" alt="Logo Hendrik Hogendijk" class="footer-logo">
-
         <div class="footer-text">
-            ©Destination ICT, ALL RIGHTS RESERVED
+            &copy;Destination ICT, ALL RIGHTS RESERVED
         </div>
-
-
-
     </footer>
+
+
+
+
+
 
 
     <script src="accets/js/app.js"></script>
