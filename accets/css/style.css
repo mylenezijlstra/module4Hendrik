@@ -67,6 +67,7 @@ body {
 
 .nav-buttons a {
     background-color: #496549;
+    background-color: #496549;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -209,6 +210,14 @@ body {
     /* volledige afbeelding zichtbaar */
 }
 
+/* Correctie voor vaste header bij scrollen */
+#home,
+#gallerij,
+#diensten,
+#contact {
+    scroll-margin-top: 170px;
+}
+
 
 /* navigatieknoppen */
 .manual-carousel .manual-prev,
@@ -243,7 +252,7 @@ body {
 .green-line {
     width: 100%;
     /* volle breedte */
-    height: 2000px;
+    height: 2450px;
     /* 2000px “dikte” */
     background-color: #799a79;
 }
@@ -404,4 +413,185 @@ body {
     width: 100px;
     height: 40px;
     border-radius: 4px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+.auto-slideshow {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.auto-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: 0;
+}
+
+.auto-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.header-stripes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+body {
+    padding-top: 170px;
+}
+
+
+
+
+
+/* Hamburger button stijl */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    top: 100px;
+    /* Iets naar beneden */
+    right: 20px;
+    /* Rechts uitgelijnd binnen header */
+    z-index: 1100;
+    /* Zorg dat het boven de header balk ligt */
+}
+
+/* Drie groene streepjes */
+.hamburger span {
+    display: block;
+    height: 4px;
+    background-color: #496549;
+    /* jouw groene kleur */
+    border-radius: 2px;
+}
+
+/* Mobiel: hamburger zichtbaar, nav verborgen */
+@media (max-width: 768px) {
+    .nav-buttons {
+        display: none;
+        flex-direction: column;
+        background-color: #496549;
+        position: absolute;
+        top: 130px;
+        /* Iets onder hamburger */
+        right: 20px;
+        width: 150px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1099;
+        /* Iets onder hamburger */
+    }
+
+    .nav-buttons a {
+        display: block;
+        padding: 12px 20px;
+        color: white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        font-weight: 600;
+    }
+
+    .nav-buttons a:last-child {
+        border-bottom: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-buttons.open {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .slideshow::after {
+        border-top-width: 350px;
+        /* was 200px */
+        height: 55vh;
+        /* iets hoger voor meer impact */
+        width: 200vw;
+        /* zoals je eerder gebruikte */
+    }
+
+
+    .blue-line {
+        min-height: 1000px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .blue-line__img {
+        margin: 30px;
+        max-width: 90%;
+        height: auto;
+    }
+
+    .blue-line__text {
+        margin-top: 1rem;
+        padding: 30px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .services-container .zigzag-item {
+        flex-direction: column !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .services-container .zigzag-item img {
+        margin: 20px auto;
+        max-width: 80%;
+        height: auto;
+    }
+
+    .services-container .zigzag-text {
+        margin-top: 1rem;
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .services-container .zigzag-text h3 {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .services-container .zigzag-text p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
 }
