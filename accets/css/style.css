@@ -202,7 +202,7 @@ body {
 .green-line {
     width: 100%;
     /* volle breedte */
-    height: 2700px;
+    height: 2500px;
     /* 2000px “dikte” */
     background-color: #799a79;
 }
@@ -518,7 +518,7 @@ body {
         margin-top: 1rem;
         padding: 30px;
         font-size: 1rem;
-        text-align: center;
+        text-align: left;
     }
 
     .services-container .zigzag-item {
@@ -561,7 +561,7 @@ body {
     }
 
     .green-line {
-        min-height: 3400px;
+        min-height: 3200px;
 
     }
 
@@ -572,14 +572,10 @@ body {
 }
 
 
-
-
-
-
 }
 
 .extramargin {
-    margin: 90px;
+    padding: 90px;
 }
 
 .contact-info {
@@ -628,6 +624,7 @@ body {
     /* Zwarte tekst zoals je wilde */
     margin: 1.5rem 0;
     text-align: center;
+    text-decoration: none;
 }
 
 
@@ -678,3 +675,12 @@ body {
     font-style: italic;
     color: #333;
 }
+
+.witgrijs{
+    background-color: #dce7dc;
+}
+
+.tekstkleur{
+    color: #333333;
+}
+
