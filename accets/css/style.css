@@ -284,7 +284,7 @@ body {
 .green-footer {
     display: flex;
     flex-direction: column;
-    align-items:    center;
+    align-items: center;
     justify-content: center;
     width: 100%;
     height: 250px;
@@ -311,7 +311,7 @@ body {
 
 .contactformulier {
     width: 100%;
-    height: 1200px;
+    height: 1600px;
     background-color: #efefef;
     display: flex;
     flex-direction: column;
@@ -566,7 +566,7 @@ body {
     }
 
    .contact-section {
-    min-height: 1700px; 
+    min-height: 2100px; 
     text-align: center;
     background-color: #efefef;
 }
@@ -638,42 +638,43 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-
-.contact-extra {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 40px;
-  background-color: #e0e0e0;
-  padding: 20px;
-  border-radius: 10px;
+.review-section {
+    background-color: #dce7dc; /* zachte groentint */
+    color: #000;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.contact-info,
-.openingstijden-box {
-  flex: 1;
-  min-width: 280px;
+.review-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
-.openingstijden-box {
-  background-color: #d5d5da;
-  padding: 20px;
-  border: 2px solid #22382f;
-  border-radius: 15px;
+.review-section .intro-text {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
-.contact-info h2,
-.openingstijden-box h2 {
-  margin-top: 0;
+.review {
+    background-color: #fff;
+    border-left: 5px solid #496549;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
 }
 
-.contact-info p, .telefoonnummer  {
-  font-size: 20px;
-  font-weight: bold;
-    color: #334333;
+.review p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
 }
 
-.contact-info a:hover {
-  text-decoration: underline;
+.review span {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    color: #333;
 }
-
