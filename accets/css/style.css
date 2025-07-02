@@ -165,14 +165,18 @@ body {
 }
 
 .blue-line__img {
-    margin: 50px;
-    height: 400px;
-    /* gewenste hoogte */
-    width: auto;
-    /* verhouding behouden */
-    object-fit: cover;
-    /* staat nu standaard links in de blauwe lijn */
+  margin: 50px;
+  height: 400px;
+  width: auto;
+  object-fit: cover;
+
+  /* witte border rondom */
+  border: 20px solid #fff;
+
+  /* border wordt meegeteld in de width/height */
+  box-sizing: border-box;
 }
+
 
 .blue-line__text {
     margin-left: auto;
@@ -682,4 +686,3 @@ body {
 .tekstkleur{
     color: #333333;
 }
-
